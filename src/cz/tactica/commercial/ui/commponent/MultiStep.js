@@ -1,3 +1,4 @@
+
 var multiStepId = null;
 cz_tactica_commercial_ui_commponent_MultiStep = function() {
 	var e = this.getElement();
@@ -20,13 +21,11 @@ cz_tactica_commercial_ui_commponent_MultiStep = function() {
 			var description = step.description;
 			
 			ilEl.setAttribute("step", step.stepNum);
-			ilEl.setAttribute("data-toggle", "tooltip");
-			ilEl.setAttribute("data-placement", "bottom");
-			ilEl.setAttribute("title", description);
-			
-			$('[data-toggle="tooltip"]').tooltip(); 
 			
 			var span = document.createElement('span');
+			span.setAttribute("data-toggle", "tooltip");
+			span.setAttribute("data-placement", "bottom");
+			span.setAttribute("title", description);
 			span.classList.add('bubble');
 			
 			var text = document.createElement('text');
@@ -53,8 +52,10 @@ cz_tactica_commercial_ui_commponent_MultiStep = function() {
 		}
 	}
 	e.appendChild(ulEl);
+	$('[data-toggle="tooltip"]').tooltip();
 }
 
+ 
 function go_step(step){
 	var ulEl = document.getElementById(multiStepId);
 	var children = ulEl.childNodes;
