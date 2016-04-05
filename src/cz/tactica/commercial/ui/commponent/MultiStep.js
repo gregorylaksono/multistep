@@ -21,11 +21,11 @@ cz_tactica_commercial_ui_commponent_MultiStep = function() {
 			var description = step.description;
 			
 			ilEl.setAttribute("step", step.stepNum);
+			ilEl.setAttribute("data-toggle", "tooltip");
+			ilEl.setAttribute("data-placement", "bottom");
+			ilEl.setAttribute("title", description);
 			
 			var span = document.createElement('span');
-			span.setAttribute("data-toggle", "tooltip");
-			span.setAttribute("data-placement", "bottom");
-			span.setAttribute("title", description);
 			span.classList.add('bubble');
 			
 			var text = document.createElement('text');
@@ -37,9 +37,9 @@ cz_tactica_commercial_ui_commponent_MultiStep = function() {
 			
 			if(isComplete){
 				var newLine = document.createElement('br');
-//				var small = document.createElement('small');
-//				small.innerHTML = '(complete)';
-//				small.textContent = '(complete)';
+//				var check = document.createElement('span');
+//				check.innerHTML = '(complete)';
+//				check.textContent = '(complete)';
 				
 				ilEl.appendChild(newLine);
 				ilEl.appendChild(small);
