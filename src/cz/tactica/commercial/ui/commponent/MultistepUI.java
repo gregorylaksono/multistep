@@ -2,6 +2,7 @@ package cz.tactica.commercial.ui.commponent;
 
 import javax.servlet.annotation.WebServlet;
 
+import com.vaadin.annotations.StyleSheet;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.server.VaadinRequest;
@@ -17,6 +18,7 @@ import com.vaadin.ui.VerticalLayout;
 
 @SuppressWarnings("serial")
 @Theme("multistep")
+@StyleSheet("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
 public class MultistepUI extends UI {
 
 	@WebServlet(value = "/*", asyncSupported = true)

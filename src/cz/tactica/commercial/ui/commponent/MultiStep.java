@@ -11,8 +11,8 @@ import com.vaadin.annotations.StyleSheet;
 import com.vaadin.shared.ui.JavaScriptComponentState;
 import com.vaadin.ui.AbstractJavaScriptComponent;
 
-@JavaScript({"jquery-1.12.2.min.js","boot.js","MultiStep.js"})
-@StyleSheet("bootstrap.min.css")
+@JavaScript({"jquery-1.12.2.min.js","MultiStep.js"})
+
 public class MultiStep extends AbstractJavaScriptComponent {
 
 	/**

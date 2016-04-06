@@ -21,16 +21,19 @@ cz_tactica_commercial_ui_commponent_MultiStep = function() {
 			var description = step.description;
 			
 			ilEl.setAttribute("step", step.stepNum);
-			ilEl.setAttribute("data-toggle", "tooltip");
-			ilEl.setAttribute("data-placement", "bottom");
-			ilEl.setAttribute("title", description);
 			
 			var span = document.createElement('span');
 			span.classList.add('bubble');
 			
+			var spantooltip = document.createElement('span');
+			spantooltip.innerHTML = description;
+			spantooltip.textContent = description;
+			span.appendChild(spantooltip);
+			
 			var text = document.createElement('text');
 			text.innerHTML = step.step;
 			text.textContent = step.step;
+			text.classList.add('multistep-margin-top');
 			
 			ilEl.appendChild(span);
 			ilEl.appendChild(text);

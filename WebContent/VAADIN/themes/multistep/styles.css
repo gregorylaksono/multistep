@@ -70,9 +70,6 @@
 @keyframes valo-animate-in-slide-down {
 		0% {
 		-webkit-transform: translateY(-100%);
-		-moz-transform: translateY(-100%);
-		-ms-transform: translateY(-100%);
-		-o-transform: translateY(-100%);
 		transform: translateY(-100%);
 	}
 	}
@@ -92,9 +89,6 @@
 @keyframes valo-animate-in-slide-up {
 		0% {
 		-webkit-transform: translateY(100%);
-		-moz-transform: translateY(100%);
-		-ms-transform: translateY(100%);
-		-o-transform: translateY(100%);
 		transform: translateY(100%);
 	}
 	}
@@ -114,9 +108,6 @@
 @keyframes valo-animate-in-slide-left {
 		0% {
 		-webkit-transform: translateX(100%);
-		-moz-transform: translateX(100%);
-		-ms-transform: translateX(100%);
-		-o-transform: translateX(100%);
 		transform: translateX(100%);
 	}
 	}
@@ -136,9 +127,6 @@
 @keyframes valo-animate-in-slide-right {
 		0% {
 		-webkit-transform: translateX(-100%);
-		-moz-transform: translateX(-100%);
-		-ms-transform: translateX(-100%);
-		-o-transform: translateX(-100%);
 		transform: translateX(-100%);
 	}
 	}
@@ -158,9 +146,6 @@
 @keyframes valo-animate-out-slide-down {
 		100% {
 		-webkit-transform: translateY(100%);
-		-moz-transform: translateY(100%);
-		-ms-transform: translateY(100%);
-		-o-transform: translateY(100%);
 		transform: translateY(100%);
 	}
 	}
@@ -180,9 +165,6 @@
 @keyframes valo-animate-out-slide-up {
 		100% {
 		-webkit-transform: translateY(-100%);
-		-moz-transform: translateY(-100%);
-		-ms-transform: translateY(-100%);
-		-o-transform: translateY(-100%);
 		transform: translateY(-100%);
 	}
 	}
@@ -202,9 +184,6 @@
 @keyframes valo-animate-out-slide-left {
 		100% {
 		-webkit-transform: translateX(-100%);
-		-moz-transform: translateX(-100%);
-		-ms-transform: translateX(-100%);
-		-o-transform: translateX(-100%);
 		transform: translateX(-100%);
 	}
 	}
@@ -224,9 +203,6 @@
 @keyframes valo-animate-out-slide-right {
 		100% {
 		-webkit-transform: translateX(100%);
-		-moz-transform: translateX(100%);
-		-ms-transform: translateX(100%);
-		-o-transform: translateX(100%);
 		transform: translateX(100%);
 	}
 	}
@@ -248,9 +224,6 @@
 @keyframes valo-overlay-animate-in {
 		0% {
 		-webkit-transform: translatey(-4px);
-		-moz-transform: translatey(-4px);
-		-ms-transform: translatey(-4px);
-		-o-transform: translatey(-4px);
 		transform: translatey(-4px);
 		opacity: 0;
 	}
@@ -274,9 +247,6 @@
 		100% {
 		opacity: 0;
 		-webkit-transform: translatey(30%);
-		-moz-transform: translatey(30%);
-		-ms-transform: translatey(30%);
-		-o-transform: translatey(30%);
 		transform: translatey(30%);
 	}
 	}
@@ -314,24 +284,6 @@
  * 
  * @group util
  */
-
-@font-face {
-	font-family: ThemeIcons;
-	font-weight: normal;
-	font-style: normal;
-	src: url(../valo/util/bourbon/css3/../../../../base/fonts/themeicons-webfont.eot);
-	src: url(../valo/util/bourbon/css3/../../../../base/fonts/themeicons-webfont.eot?#iefix) format("embedded-opentype"), url(../valo/util/bourbon/css3/../../../../base/fonts/themeicons-webfont.woff) format("woff"), url(../valo/util/bourbon/css3/../../../../base/fonts/themeicons-webfont.ttf) format("truetype"), url(../valo/util/bourbon/css3/../../../../base/fonts/themeicons-webfont.svg#ThemeIcons) format("svg");
-}
-
-.ThemeIcons {
-	font-family: ThemeIcons;
-	font-style: normal;
-	font-weight: normal;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	display: inline-block;
-	text-align: center;
-}
 
 @font-face {
 	font-family: FontAwesome;
@@ -849,9 +801,6 @@
 @keyframes v-popupview-animate-in {
 		0% {
 		-webkit-transform: scale(0);
-		-moz-transform: scale(0);
-		-ms-transform: scale(0);
-		-o-transform: scale(0);
 		transform: scale(0);
 	}
 	}
@@ -986,9 +935,6 @@
 @keyframes valo-animate-out-scale-down-fade {
 		100% {
 		-webkit-transform: scale(0.8);
-		-moz-transform: scale(0.8);
-		-ms-transform: scale(0.8);
-		-o-transform: scale(0.8);
 		transform: scale(0.8);
 		opacity: 0;
 	}
@@ -999,7 +945,7 @@
  */
 
 .v-vaadin-version:after {
-	content: "7.6.4";
+	content: "7.4.6";
 }
 
 .v-widget {
@@ -1886,60 +1832,6 @@ div.v-layout.v-horizontal.v-widget {
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.05);
 }
 
-.multistep .v-reconnect-dialog {
-	color: white;
-	top: 12px;
-	right: 12px;
-	max-width: 100%;
-	border-radius: 0;
-	-webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
-	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
-	padding: 12px 15px;
-	background-color: #444;
-	background-color: rgba(68, 68, 68, 0.9);
-	line-height: 22px;
-	text-align: center;
-}
-
-.multistep .v-reconnect-dialog .text {
-	display: inline-block;
-	padding-left: 10px;
-}
-
-.multistep .v-reconnect-dialog .spinner {
-	height: 24px !important;
-	width: 24px !important;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	border: 2px solid rgba(25, 125, 225, 0.2);
-	border-top-color: #197de1;
-	border-right-color: #197de1;
-	border-radius: 100%;
-	-webkit-animation: v-rotate-360 500ms infinite linear;
-	-moz-animation: v-rotate-360 500ms infinite linear;
-	animation: v-rotate-360 500ms infinite linear;
-	pointer-events: none;
-	display: none;
-	vertical-align: middle;
-}
-
-.v-ie8 .multistep .v-reconnect-dialog .spinner, .v-ie9 .multistep .v-reconnect-dialog .spinner {
-	border: none;
-	border-radius: 4px;
-	background: #fff url(../valo/shared/img/spinner.gif) no-repeat 50% 50%;
-	background-size: 80%;
-}
-
-.v-ie8 .multistep .v-reconnect-dialog .spinner {
-	min-width: 30px;
-	min-height: 30px;
-}
-
-.multistep .v-reconnect-dialog.active .spinner {
-	display: inline-block;
-}
-
 .multistep .v-absolutelayout-wrapper {
 	position: absolute;
 }
@@ -2584,7 +2476,7 @@ div.v-layout.v-horizontal.v-widget {
 
 :root .multistep .v-checkbox > input ~ label:after {
 	content: "\f00c";
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	color: transparent;
 	-webkit-transition: color 100ms;
 	-moz-transition: color 100ms;
@@ -2617,23 +2509,6 @@ div.v-layout.v-horizontal.v-widget {
 
 :root .multistep .v-checkbox.v-disabled > input:active ~ label:after {
 	background: transparent;
-}
-
-.multistep .v-checkbox.v-readonly  > label, .multistep .v-checkbox.v-readonly  > .v-icon {
-	cursor: default;
-}
-
-.multistep .v-checkbox.v-readonly  > label > .v-icon {
-	cursor: default;
-}
-
-:root .multistep .v-checkbox.v-readonly > input:active ~ label:after {
-	background: transparent;
-}
-
-:root .multistep .v-checkbox.v-readonly > input ~ label:after {
-	opacity: 0.5;
-	filter: alpha(opacity=50) ;
 }
 
 .multistep .v-checkbox-small {
@@ -2714,7 +2589,7 @@ div.v-layout.v-horizontal.v-widget {
 
 :root .multistep .v-checkbox-small > input ~ label:after {
 	content: "\f00c";
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	color: transparent;
 	-webkit-transition: color 100ms;
 	-moz-transition: color 100ms;
@@ -2747,23 +2622,6 @@ div.v-layout.v-horizontal.v-widget {
 
 :root .multistep .v-checkbox-small.v-disabled > input:active ~ label:after {
 	background: transparent;
-}
-
-.multistep .v-checkbox-small.v-readonly  > label, .multistep .v-checkbox-small.v-readonly  > .v-icon {
-	cursor: default;
-}
-
-.multistep .v-checkbox-small.v-readonly  > label > .v-icon {
-	cursor: default;
-}
-
-:root .multistep .v-checkbox-small.v-readonly > input:active ~ label:after {
-	background: transparent;
-}
-
-:root .multistep .v-checkbox-small.v-readonly > input ~ label:after {
-	opacity: 0.5;
-	filter: alpha(opacity=50) ;
 }
 
 .multistep .v-checkbox-large {
@@ -2844,7 +2702,7 @@ div.v-layout.v-horizontal.v-widget {
 
 :root .multistep .v-checkbox-large > input ~ label:after {
 	content: "\f00c";
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	color: transparent;
 	-webkit-transition: color 100ms;
 	-moz-transition: color 100ms;
@@ -2877,23 +2735,6 @@ div.v-layout.v-horizontal.v-widget {
 
 :root .multistep .v-checkbox-large.v-disabled > input:active ~ label:after {
 	background: transparent;
-}
-
-.multistep .v-checkbox-large.v-readonly  > label, .multistep .v-checkbox-large.v-readonly  > .v-icon {
-	cursor: default;
-}
-
-.multistep .v-checkbox-large.v-readonly  > label > .v-icon {
-	cursor: default;
-}
-
-:root .multistep .v-checkbox-large.v-readonly > input:active ~ label:after {
-	background: transparent;
-}
-
-:root .multistep .v-checkbox-large.v-readonly > input ~ label:after {
-	opacity: 0.5;
-	filter: alpha(opacity=50) ;
 }
 
 .multistep .v-filterselect {
@@ -2935,7 +2776,7 @@ div.v-layout.v-horizontal.v-widget {
 	transition: box-shadow 180ms, border 180ms;
 	width: 100% !important;
 	height: 100%;
-	padding-right: 38px;
+	padding-right: 44px;
 	border-radius: inherit;
 }
 
@@ -3005,7 +2846,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .multistep .v-filterselect [class$="button"]:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f078";
 	-webkit-transition: color 140ms;
 	-moz-transition: color 140ms;
@@ -3198,7 +3039,7 @@ div.v-layout.v-horizontal.v-widget {
 	height: 25px;
 	line-height: 25px;
 	text-align: center;
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	-webkit-transform: scale(0.8);
 	-moz-transform: scale(0.8);
 	-ms-transform: scale(0.8);
@@ -3390,7 +3231,7 @@ div.v-layout.v-horizontal.v-widget {
 	transition: box-shadow 180ms, border 180ms;
 	width: 100% !important;
 	height: 100%;
-	padding-right: 29px;
+	padding-right: 34px;
 	border-radius: inherit;
 }
 
@@ -3426,7 +3267,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .multistep .v-filterselect-tiny [class$="button"]:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f078";
 	-webkit-transition: color 140ms;
 	-moz-transition: color 140ms;
@@ -3517,7 +3358,7 @@ div.v-layout.v-horizontal.v-widget {
 	transition: box-shadow 180ms, border 180ms;
 	width: 100% !important;
 	height: 100%;
-	padding-right: 32px;
+	padding-right: 37px;
 	border-radius: inherit;
 }
 
@@ -3553,7 +3394,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .multistep .v-filterselect-compact [class$="button"]:before, .multistep .v-filterselect-small [class$="button"]:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f078";
 	-webkit-transition: color 140ms;
 	-moz-transition: color 140ms;
@@ -3649,7 +3490,7 @@ div.v-layout.v-horizontal.v-widget {
 	transition: box-shadow 180ms, border 180ms;
 	width: 100% !important;
 	height: 100%;
-	padding-right: 45px;
+	padding-right: 53px;
 	border-radius: inherit;
 }
 
@@ -3685,7 +3526,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .multistep .v-filterselect-large [class$="button"]:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f078";
 	-webkit-transition: color 140ms;
 	-moz-transition: color 140ms;
@@ -3777,7 +3618,7 @@ div.v-layout.v-horizontal.v-widget {
 	transition: box-shadow 180ms, border 180ms;
 	width: 100% !important;
 	height: 100%;
-	padding-right: 60px;
+	padding-right: 71px;
 	border-radius: inherit;
 }
 
@@ -3813,7 +3654,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .multistep .v-filterselect-huge [class$="button"]:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f078";
 	-webkit-transition: color 140ms;
 	-moz-transition: color 140ms;
@@ -4301,24 +4142,6 @@ div.v-layout.v-horizontal.v-widget {
 	z-index: 1;
 }
 
-.multistep .v-grid-spacer {
-	position: absolute;
-	display: block;
-	background-color: white;
-}
-
-.multistep .v-grid-spacer  > td {
-	width: 100%;
-	height: 100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-.v-ie8 .multistep .v-grid-spacer, .v-ie9 .multistep .v-grid-spacer {
-	margin-top: 0;
-}
-
 .multistep .v-grid {
 	outline: none;
 }
@@ -4339,109 +4162,9 @@ div.v-layout.v-horizontal.v-widget {
 	border: 1px solid #d4d4d4;
 }
 
-.multistep .v-grid .header-drag-table {
-	border-spacing: 0;
-	position: relative;
-	table-layout: fixed;
-	width: inherit;
-}
-
-.multistep .v-grid .header-drag-table .v-grid-header {
-	position: absolute;
-}
-
-.multistep .v-grid .header-drag-table .v-grid-header  > .v-grid-cell {
-	border: 1px solid #d4d4d4;
-	margin-top: -10px;
-	opacity: 0.9;
-	filter: alpha(opacity=90);
-	z-index: 30000;
-}
-
-.multistep .v-grid .header-drag-table .v-grid-header  > .v-grid-drop-marker {
-	background-color: #197de1;
-	position: absolute;
-	width: 3px;
-}
-
-.multistep .v-grid-sidebar.v-contextmenu {
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	border-radius: 0;
-	position: absolute;
-	top: 0;
-	right: 0;
-	background-color: #fafafa;
-	border: 1px solid #d4d4d4;
-	padding: 0;
-	z-index: 5;
-}
-
-.multistep .v-grid-sidebar.v-contextmenu.v-grid-sidebar-popup {
-	right: auto;
-}
-
-.multistep .v-grid-sidebar.v-contextmenu .v-grid-sidebar-button {
-	background: transparent;
-	border: none;
-	color: inherit;
-	cursor: pointer;
-	outline: none;
-	padding: 0 4px;
-	text-align: right;
-	line-height: 1;
-}
-
-.multistep .v-grid-sidebar.v-contextmenu .v-grid-sidebar-button[disabled] {
-	cursor: default;
-}
-
-.multistep .v-grid-sidebar.v-contextmenu .v-grid-sidebar-button::-moz-focus-inner {
-	border: 0;
-}
-
-.multistep .v-grid-sidebar.v-contextmenu .v-grid-sidebar-button:after {
-	content: "\f0c9";
-	display: block;
-	font-family: ThemeIcons, sans-serif;
-	font-size: 14px;
-}
-
-.multistep .v-grid-sidebar.v-contextmenu.closed {
-	border-radius: 0;
-}
-
-.multistep .v-grid-sidebar.v-contextmenu.open .v-grid-sidebar-button {
-	width: 100%;
-}
-
-.multistep .v-grid-sidebar.v-contextmenu.open .v-grid-sidebar-button:after {
-	content: "\f0c9";
-	font-size: 14px;
-	line-height: 1;
-}
-
-.v-ie .multistep .v-grid-sidebar.v-contextmenu.open .v-grid-sidebar-button {
-	vertical-align: middle;
-}
-
-.v-ie8 .multistep .v-grid-sidebar.v-contextmenu.open .v-grid-sidebar-button:after {
-	vertical-align: middle;
-	text-align: center;
-	display: inline;
-}
-
-.multistep .v-grid-sidebar.v-contextmenu .v-grid-sidebar-content {
-	padding: 4px 0;
-}
-
-.multistep .v-grid-sidebar.v-contextmenu .v-grid-sidebar-content .gwt-MenuBar .gwt-MenuItem .column-hiding-toggle {
-	text-shadow: none;
-}
-
 .multistep .v-grid-cell {
 	background-color: white;
-	padding: 0 18px;
+	padding: 0 12px;
 	line-height: 37px;
 	text-overflow: ellipsis;
 }
@@ -4474,13 +4197,6 @@ div.v-layout.v-horizontal.v-widget {
 	border-left: none;
 }
 
-.multistep .v-grid-editor-cells.frozen > div {
-	-webkit-box-shadow: 1px 0 2px rgba(0, 0, 0, 0.1);
-	box-shadow: 1px 0 2px rgba(0, 0, 0, 0.1);
-	border-right: 1px solid #d4d4d4;
-	border-left: none;
-}
-
 .multistep .v-grid-row-stripe > td {
 	background-color: #f5f5f5;
 }
@@ -4509,34 +4225,19 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .multistep .v-grid-header .sort-asc, .multistep .v-grid-header .sort-desc {
-	padding-right: 35px;
+	padding-right: 29px;
 }
 
 .multistep .v-grid-header .sort-asc:after, .multistep .v-grid-header .sort-desc:after {
-	font-family: ThemeIcons, sans-serif;
+	font-family: FontAwesome, sans-serif;
 	content: "\f0de" " " attr(sort-order);
 	position: absolute;
-	right: 18px;
+	right: 12px;
 	font-size: 12px;
 }
 
 .multistep .v-grid-header .sort-desc:after {
 	content: "\f0dd" " " attr(sort-order);
-}
-
-.multistep .v-grid-column-resize-handle {
-	position: absolute;
-	width: 36px;
-	right: -18px;
-	top: 0px;
-	bottom: 0px;
-	cursor: col-resize;
-	z-index: 10;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
 }
 
 .multistep .v-grid-footer td {
@@ -4551,18 +4252,6 @@ div.v-layout.v-horizontal.v-widget {
 
 .multistep .v-grid-footer td:first-child {
 	border-left: none;
-}
-
-.multistep .v-grid-header .v-grid-cell, .multistep .v-grid-footer .v-grid-cell {
-	overflow: visible;
-}
-
-.multistep .v-grid-column-header-content, .multistep .v-grid-column-footer-content {
-	width: 100%;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	line-height: 37px;
-	vertical-align: baseline;
 }
 
 .multistep .v-grid-header-deco {
@@ -4625,17 +4314,9 @@ div.v-layout.v-horizontal.v-widget {
 	box-shadow: 0 0 9px rgba(0, 0, 0, 0.2);
 }
 
-.multistep .v-grid-editor.unbuffered .v-grid-editor-footer {
-	width: 100%;
-}
-
 .multistep .v-grid-editor-cells {
 	position: relative;
 	white-space: nowrap;
-}
-
-.multistep .v-grid-editor-cells.frozen {
-	z-index: 2;
 }
 
 .multistep .v-grid-editor-cells  > div {
@@ -4656,22 +4337,6 @@ div.v-layout.v-horizontal.v-widget {
 	display: inline-block;
 }
 
-.multistep .v-grid-editor-cells  > div .v-filterselect {
-	padding-left: 0;
-}
-
-.multistep .v-grid-editor-cells  > div input[type="text"], .multistep .v-grid-editor-cells  > div input[type="text"].v-filterselect-input, .multistep .v-grid-editor-cells  > div input[type="password"] {
-	padding-left: 18px;
-}
-
-.multistep .v-grid-editor-cells  > div input[type="text"]:not(.v-filterselect-input), .multistep .v-grid-editor-cells  > div input[type="password"] {
-	padding-right: 9px;
-}
-
-.multistep .v-grid-editor-cells  > div input[type="checkbox"] {
-	margin-left: 18px;
-}
-
 .multistep .v-grid-editor-cells  > div .v-textfield, .multistep .v-grid-editor-cells  > div .v-datefield, .multistep .v-grid-editor-cells  > div .v-filterselect {
 	min-width: 100%;
 	max-width: 100%;
@@ -4679,21 +4344,9 @@ div.v-layout.v-horizontal.v-widget {
 	max-height: 100%;
 }
 
-.v-ie8 .multistep .v-grid-editor-cells  > div .v-datefield-button {
-	margin-left: -37px;
-}
-
-.v-ie8 .multistep .v-grid-editor-cells  > div .v-filterselect-button {
-	margin-left: -25px;
-}
-
 .multistep .v-grid-editor-cells  > div .v-select, .multistep .v-grid-editor-cells  > div .v-select-select {
 	min-width: 100%;
 	max-width: 100%;
-}
-
-.multistep .v-grid-editor-cells  > div.not-editable.v-grid-cell {
-	float: none;
 }
 
 .multistep .v-grid-editor-cells .error::before {
@@ -4755,45 +4408,6 @@ div.v-layout.v-horizontal.v-widget {
 	margin-right: 4px;
 }
 
-.multistep .v-grid-spacer {
-	padding-left: 1px;
-}
-
-.multistep .v-grid-spacer > td {
-	display: block;
-	padding: 0;
-	background-color: white;
-	border-top: 1px solid #eeeeee;
-	border-bottom: 1px solid #d4d4d4;
-}
-
-.multistep .v-grid-spacer.stripe > td {
-	background-color: #f5f5f5;
-	border-top: 1px solid #e5e5e5;
-	border-bottom: 1px solid #d4d4d4;
-}
-
-.multistep .v-grid-spacer-deco-container {
-	border-top: 1px solid transparent;
-	position: relative;
-	top: 0;
-	z-index: 5;
-}
-
-.multistep .v-grid-spacer-deco {
-	top: 0;
-	left: 0;
-	width: 2px;
-	background-color: #197de1;
-	position: absolute;
-	height: 100%;
-	pointer-events: none;
-}
-
-.ie8 .multistep .v-grid-spacer-deco:before, .ie9 .multistep .v-grid-spacer-deco:before, .ie10 .multistep .v-grid-spacer-deco:before {
-	content: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==);
-}
-
 .multistep .v-grid-cell > .v-progressbar {
 	width: 100%;
 }
@@ -4806,28 +4420,11 @@ div.v-layout.v-horizontal.v-widget {
 	background-color: #fafafa;
 }
 
-.multistep .v-grid.v-disabled {
-	opacity: 0.5;
-	filter: alpha(opacity=50) ;
-}
-
 .multistep .v-grid-header .v-grid-cell {
 	background-color: #fafafa;
 	background-image: -webkit-linear-gradient(top, #fafafa 2%, #efefef 98%);
 	background-image: linear-gradient(to bottom,#fafafa 2%, #efefef 98%);
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
-}
-
-.multistep .v-grid-header .v-grid-cell.dragged {
-	opacity: 0.5;
-	filter: alpha(opacity=50) ;
-	-webkit-transition: opacity 0.3s ease-in-out;
-	-moz-transition: opacity 0.3s ease-in-out;
-	transition: opacity 0.3s ease-in-out;
-}
-
-.multistep .v-grid-header .v-grid-cell.dragged-column-header {
-	margin-top: -19px;
 }
 
 .multistep .v-grid-footer .v-grid-cell {
@@ -4894,10 +4491,6 @@ div.v-layout.v-horizontal.v-widget {
 	vertical-align: middle;
 }
 
-.multistep .v-grid-editor-cells > div.not-editable.v-grid-cell {
-	float: none;
-}
-
 .multistep .v-grid-editor-cells > div .error::before {
 	border-top: 9px solid #ed473b;
 	border-right: 9px solid transparent;
@@ -4915,36 +4508,20 @@ div.v-layout.v-horizontal.v-widget {
 	box-shadow: inset 0 1px 0 #f2f2f2;
 }
 
-.multistep .v-grid-editor-cells > div input[type="text"].v-datefield-textfield {
-	padding-left: 44.4px;
-}
-
-.v-ie8 .multistep .v-grid-editor-cells > div .v-datefield-button {
-	margin-left: 0px;
-}
-
-.v-ie8 .multistep .v-grid-editor-cells > div .v-filterselect-button {
-	margin-left: 0px;
-}
-
 .multistep .v-grid-editor-cells > div .v-textfield-focus, .multistep .v-grid-editor-cells > div .v-datefield .v-textfield-focus, .multistep .v-grid-editor-cells > div .v-filterselect-input:focus {
 	position: relative;
 }
 
 .multistep .v-grid-editor-cells > div .v-select {
-	padding-left: 9px;
-	padding-right: 9px;
+	padding-left: 6px;
+	padding-right: 6px;
 }
 
 .multistep .v-grid-editor-cells > div .v-checkbox {
-	margin: 0 9px 0 18px;
+	margin: 0 6px;
 }
 
-.multistep .v-grid-editor-cells > div .v-checkbox  > input[type="checkbox"] {
-	margin-left: 0;
-}
-
-.multistep .v-grid-editor-cells > div .v-checkbox  > label {
+.multistep .v-grid-editor-cells > div .v-checkbox label {
 	white-space: nowrap;
 }
 
@@ -4981,21 +4558,6 @@ div.v-layout.v-horizontal.v-widget {
 .multistep .v-grid-editor-save.v-disabled, .multistep .v-grid-editor-cancel.v-disabled {
 	opacity: 0.5;
 	filter: alpha(opacity=50) ;
-}
-
-.multistep .v-grid-spacer {
-	margin-top: -1px;
-}
-
-.multistep .v-grid-sidebar.v-contextmenu.open .v-grid-sidebar-content {
-	margin: 0 0 2px;
-	padding: 4px 4px 2px;
-}
-
-.multistep .v-grid-sidebar.v-contextmenu.closed {
-	background-color: #fafafa;
-	background-image: -webkit-linear-gradient(top, #fafafa 2%, #efefef 98%);
-	background-image: linear-gradient(to bottom,#fafafa 2%, #efefef 98%);
 }
 
 .multistep .v-grid-scroller::-webkit-scrollbar {
@@ -5866,7 +5428,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .multistep .v-datefield [class*="button"]:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f073";
 	-webkit-transition: color 140ms;
 	-moz-transition: color 140ms;
@@ -6114,22 +5676,22 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .multistep .v-datefield-popup .v-button-prevyear:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f100";
 }
 
 .multistep .v-datefield-popup .v-button-prevmonth:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f104";
 }
 
 .multistep .v-datefield-popup .v-button-nextyear:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f101";
 }
 
 .multistep .v-datefield-popup .v-button-nextmonth:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f105";
 }
 
@@ -6307,22 +5869,22 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .multistep .v-button-prevyear:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f100";
 }
 
 .multistep .v-button-prevmonth:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f104";
 }
 
 .multistep .v-button-nextyear:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f101";
 }
 
 .multistep .v-button-nextmonth:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f105";
 }
 
@@ -6471,7 +6033,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .multistep .v-datefield-tiny [class*="button"]:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f073";
 	-webkit-transition: color 140ms;
 	-moz-transition: color 140ms;
@@ -6586,7 +6148,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .multistep .v-datefield-compact [class*="button"]:before, .multistep .v-datefield-small [class*="button"]:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f073";
 	-webkit-transition: color 140ms;
 	-moz-transition: color 140ms;
@@ -6706,7 +6268,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .multistep .v-datefield-large [class*="button"]:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f073";
 	-webkit-transition: color 140ms;
 	-moz-transition: color 140ms;
@@ -6822,7 +6384,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .multistep .v-datefield-huge [class*="button"]:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f073";
 	-webkit-transition: color 140ms;
 	-moz-transition: color 140ms;
@@ -7002,22 +6564,22 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .multistep .v-button-prevyear:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f100";
 }
 
 .multistep .v-button-prevmonth:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f104";
 }
 
 .multistep .v-button-nextyear:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f101";
 }
 
 .multistep .v-button-nextmonth:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f105";
 }
 
@@ -7313,7 +6875,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .multistep .v-menubar .v-menubar-submenu-indicator  + .v-menubar-menuitem-caption:after {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f078";
 	font-size: 0.7em;
 	vertical-align: 0.15em;
@@ -7397,7 +6959,7 @@ div.v-layout.v-horizontal.v-widget {
 .multistep .v-menubar-popup .v-menubar-submenu-indicator  + .v-menubar-menuitem-caption:after {
 	position: absolute;
 	right: 10px;
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f054";
 	line-height: 29px;
 }
@@ -7420,7 +6982,7 @@ div.v-layout.v-horizontal.v-widget {
 
 .multistep .v-menubar-popup [class*="checked"] .v-menubar-menuitem-caption:before {
 	content: "\f00c";
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	position: absolute;
 	left: 10px;
 }
@@ -7607,7 +7169,7 @@ div.v-layout.v-horizontal.v-widget {
 
 :root .multistep .v-radiobutton > input ~ label:after {
 	content: "\f00c";
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	color: transparent;
 	-webkit-transition: color 100ms;
 	-moz-transition: color 100ms;
@@ -7640,23 +7202,6 @@ div.v-layout.v-horizontal.v-widget {
 
 :root .multistep .v-radiobutton.v-disabled > input:active ~ label:after {
 	background: transparent;
-}
-
-.multistep .v-radiobutton.v-readonly  > label, .multistep .v-radiobutton.v-readonly  > .v-icon {
-	cursor: default;
-}
-
-.multistep .v-radiobutton.v-readonly  > label > .v-icon {
-	cursor: default;
-}
-
-:root .multistep .v-radiobutton.v-readonly > input:active ~ label:after {
-	background: transparent;
-}
-
-:root .multistep .v-radiobutton.v-readonly > input ~ label:after {
-	opacity: 0.5;
-	filter: alpha(opacity=50) ;
 }
 
 :root .multistep .v-radiobutton > input:checked ~ label:after {
@@ -7770,7 +7315,7 @@ div.v-layout.v-horizontal.v-widget {
 
 :root .multistep .v-select-optiongroup-small .v-checkbox > input ~ label:after {
 	content: "\f00c";
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	color: transparent;
 	-webkit-transition: color 100ms;
 	-moz-transition: color 100ms;
@@ -7803,23 +7348,6 @@ div.v-layout.v-horizontal.v-widget {
 
 :root .multistep .v-select-optiongroup-small .v-checkbox.v-disabled > input:active ~ label:after {
 	background: transparent;
-}
-
-.multistep .v-select-optiongroup-small .v-checkbox.v-readonly  > label, .multistep .v-select-optiongroup-small .v-checkbox.v-readonly  > .v-icon {
-	cursor: default;
-}
-
-.multistep .v-select-optiongroup-small .v-checkbox.v-readonly  > label > .v-icon {
-	cursor: default;
-}
-
-:root .multistep .v-select-optiongroup-small .v-checkbox.v-readonly > input:active ~ label:after {
-	background: transparent;
-}
-
-:root .multistep .v-select-optiongroup-small .v-checkbox.v-readonly > input ~ label:after {
-	opacity: 0.5;
-	filter: alpha(opacity=50) ;
 }
 
 .multistep .v-select-optiongroup-small .v-radiobutton {
@@ -7899,7 +7427,7 @@ div.v-layout.v-horizontal.v-widget {
 
 :root .multistep .v-select-optiongroup-small .v-radiobutton > input ~ label:after {
 	content: "\f00c";
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	color: transparent;
 	-webkit-transition: color 100ms;
 	-moz-transition: color 100ms;
@@ -7932,23 +7460,6 @@ div.v-layout.v-horizontal.v-widget {
 
 :root .multistep .v-select-optiongroup-small .v-radiobutton.v-disabled > input:active ~ label:after {
 	background: transparent;
-}
-
-.multistep .v-select-optiongroup-small .v-radiobutton.v-readonly  > label, .multistep .v-select-optiongroup-small .v-radiobutton.v-readonly  > .v-icon {
-	cursor: default;
-}
-
-.multistep .v-select-optiongroup-small .v-radiobutton.v-readonly  > label > .v-icon {
-	cursor: default;
-}
-
-:root .multistep .v-select-optiongroup-small .v-radiobutton.v-readonly > input:active ~ label:after {
-	background: transparent;
-}
-
-:root .multistep .v-select-optiongroup-small .v-radiobutton.v-readonly > input ~ label:after {
-	opacity: 0.5;
-	filter: alpha(opacity=50) ;
 }
 
 :root .multistep .v-select-optiongroup-small .v-radiobutton > input:checked ~ label:after {
@@ -8062,7 +7573,7 @@ div.v-layout.v-horizontal.v-widget {
 
 :root .multistep .v-select-optiongroup-large .v-checkbox > input ~ label:after {
 	content: "\f00c";
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	color: transparent;
 	-webkit-transition: color 100ms;
 	-moz-transition: color 100ms;
@@ -8095,23 +7606,6 @@ div.v-layout.v-horizontal.v-widget {
 
 :root .multistep .v-select-optiongroup-large .v-checkbox.v-disabled > input:active ~ label:after {
 	background: transparent;
-}
-
-.multistep .v-select-optiongroup-large .v-checkbox.v-readonly  > label, .multistep .v-select-optiongroup-large .v-checkbox.v-readonly  > .v-icon {
-	cursor: default;
-}
-
-.multistep .v-select-optiongroup-large .v-checkbox.v-readonly  > label > .v-icon {
-	cursor: default;
-}
-
-:root .multistep .v-select-optiongroup-large .v-checkbox.v-readonly > input:active ~ label:after {
-	background: transparent;
-}
-
-:root .multistep .v-select-optiongroup-large .v-checkbox.v-readonly > input ~ label:after {
-	opacity: 0.5;
-	filter: alpha(opacity=50) ;
 }
 
 .multistep .v-select-optiongroup-large .v-radiobutton {
@@ -8191,7 +7685,7 @@ div.v-layout.v-horizontal.v-widget {
 
 :root .multistep .v-select-optiongroup-large .v-radiobutton > input ~ label:after {
 	content: "\f00c";
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	color: transparent;
 	-webkit-transition: color 100ms;
 	-moz-transition: color 100ms;
@@ -8224,23 +7718,6 @@ div.v-layout.v-horizontal.v-widget {
 
 :root .multistep .v-select-optiongroup-large .v-radiobutton.v-disabled > input:active ~ label:after {
 	background: transparent;
-}
-
-.multistep .v-select-optiongroup-large .v-radiobutton.v-readonly  > label, .multistep .v-select-optiongroup-large .v-radiobutton.v-readonly  > .v-icon {
-	cursor: default;
-}
-
-.multistep .v-select-optiongroup-large .v-radiobutton.v-readonly  > label > .v-icon {
-	cursor: default;
-}
-
-:root .multistep .v-select-optiongroup-large .v-radiobutton.v-readonly > input:active ~ label:after {
-	background: transparent;
-}
-
-:root .multistep .v-select-optiongroup-large .v-radiobutton.v-readonly > input ~ label:after {
-	opacity: 0.5;
-	filter: alpha(opacity=50) ;
 }
 
 :root .multistep .v-select-optiongroup-large .v-radiobutton > input:checked ~ label:after {
@@ -8381,9 +7858,9 @@ div.v-layout.v-horizontal.v-widget {
 	background-image: radial-gradient(  circle at 50% 50%, #222, #0e0e0e);
 	opacity: 0.72;
 	filter: alpha(opacity=72) ;
-	-webkit-animation: valo-animate-in-fade 400ms 100ms backwards;
-	-moz-animation: valo-animate-in-fade 400ms 100ms backwards;
-	animation: valo-animate-in-fade 400ms 100ms backwards;
+	-webkit-animation: valo-animate-in-fade 400ms 100ms;
+	-moz-animation: valo-animate-in-fade 400ms 100ms;
+	animation: valo-animate-in-fade 400ms 100ms;
 }
 
 .v-op12 .multistep .v-window-modalitycurtain {
@@ -8714,7 +8191,7 @@ div.v-layout.v-horizontal.v-widget {
 	margin-left: -1.9em;
 	vertical-align: top;
 	content: "\f0da";
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	text-align: center;
 	background: transparent;
 }
@@ -8740,7 +8217,7 @@ div.v-layout.v-horizontal.v-widget {
 
 .multistep .v-tree-node-caption > div:before {
 	content: "\f0da";
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	display: inline-block;
 	width: 0.5em;
 	text-align: center;
@@ -8803,12 +8280,12 @@ div.v-layout.v-horizontal.v-widget {
 	-o-transform: rotate(90deg);
 	transform: rotate(90deg);
 	content: "\f0da";
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 }
 
 .v-ie8 .multistep .v-tree-node-expanded:before {
 	content: "\f0d7";
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 }
 
 .multistep .v-tree-node-leaf:before, .multistep .v-tree-node-leaf > .v-tree-node-caption > div:before {
@@ -9026,22 +8503,16 @@ div.v-layout.v-horizontal.v-widget {
 	border-top: 1px solid #d4d4d4;
 }
 
-.multistep .v-table-table tr:first-child > td {
+.multistep .v-table-table tr:first-child td {
 	border-top: none;
 }
 
 .multistep .v-table-row {
 	background-color: white;
-	cursor: pointer;
 }
 
 .multistep .v-table-row-odd {
 	background-color: #f5f5f5;
-	cursor: pointer;
-}
-
-.multistep .v-table-body-noselection .v-table-row, .multistep .v-table-body-noselection .v-table-row-odd {
-	cursor: default;
 }
 
 .multistep .v-table [class*="-row"].v-selected {
@@ -9086,12 +8557,12 @@ div.v-layout.v-horizontal.v-widget {
 
 .multistep .v-table-header-cell-asc .v-table-sort-indicator:before {
 	content: "\f0de";
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 }
 
 .multistep .v-table-header-cell-desc .v-table-sort-indicator:before {
 	content: "\f0dd";
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 }
 
 .multistep [class*="rowheader"] span.v-icon {
@@ -9205,7 +8676,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .multistep .v-table-column-selector:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f013";
 }
 
@@ -9219,7 +8690,7 @@ div.v-layout.v-horizontal.v-widget {
 
 .multistep .v-on:before, .multistep .v-off:before {
 	content: "\f00c";
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	font-size: 0.9em;
 	margin-right: 6px;
 }
@@ -9483,12 +8954,12 @@ div.v-layout.v-horizontal.v-widget {
 
 .multistep .v-treetable-node-closed:before {
 	content: "\f0da";
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 }
 
 .multistep .v-treetable-node-open:before {
 	content: "\f0d7";
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 }
 
 .multistep .v-splitpanel-horizontal  > div > .v-splitpanel-hsplitter {
@@ -10265,7 +9736,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .multistep .v-tabsheet-scroller [class*="Next"]:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f054";
 }
 
@@ -10274,7 +9745,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .multistep .v-tabsheet-scroller [class*="Prev"]:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f053";
 }
 
@@ -10286,9 +9757,9 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .multistep .v-tabsheet-tabsheetpanel > .v-scrollable > .v-widget {
-	-webkit-animation: valo-animate-in-fade 300ms backwards;
-	-moz-animation: valo-animate-in-fade 300ms backwards;
-	animation: valo-animate-in-fade 300ms backwards;
+	-webkit-animation: valo-animate-in-fade 300ms;
+	-moz-animation: valo-animate-in-fade 300ms;
+	animation: valo-animate-in-fade 300ms;
 }
 
 .multistep .v-tabsheet-deco {
@@ -10532,8 +10003,8 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .multistep .v-colorpicker-popup .resize-button:before {
-	font-family: ThemeIcons;
-	content: "\f141";
+	font-family: FontAwesome;
+	content: "\F141";
 }
 
 .multistep .v-colorpicker-popup .resize-button-caption {
@@ -10936,12 +10407,12 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .multistep .v-select-twincol-buttons .v-button-wrap:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f053";
 }
 
 .multistep .v-select-twincol-buttons .v-button:first-child .v-button-wrap:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f054";
 }
 
@@ -11011,12 +10482,12 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .multistep .v-calendar-header-week .v-calendar-back:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f053";
 }
 
 .multistep .v-calendar-header-week .v-calendar-next:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f054";
 }
 
@@ -11466,10 +10937,6 @@ div.v-layout.v-horizontal.v-widget {
 	margin-top: 16px;
 }
 
-.multistep .v-verticallayout > .v-slot:first-child .v-formlayout-contentcell h1, .multistep .v-verticallayout > .v-slot:first-child .v-formlayout-contentcell .v-label-h1, .multistep .v-verticallayout > .v-slot:first-child .v-formlayout-contentcell h2, .multistep .v-verticallayout > .v-slot:first-child .v-formlayout-contentcell .v-label-h2, .multistep .v-verticallayout > .v-slot:first-child .v-formlayout-contentcell h3, .multistep .v-verticallayout > .v-slot:first-child .v-formlayout-contentcell .v-label-h3, .multistep .v-verticallayout > .v-slot:first-child .v-formlayout-contentcell h4, .multistep .v-verticallayout > .v-slot:first-child .v-formlayout-contentcell .v-label-h4, .multistep .v-verticallayout > div > .v-slot:first-child .v-formlayout-contentcell h1, .multistep .v-verticallayout > div > .v-slot:first-child .v-formlayout-contentcell .v-label-h1, .multistep .v-verticallayout > div > .v-slot:first-child .v-formlayout-contentcell h2, .multistep .v-verticallayout > div > .v-slot:first-child .v-formlayout-contentcell .v-label-h2, .multistep .v-verticallayout > div > .v-slot:first-child .v-formlayout-contentcell h3, .multistep .v-verticallayout > div > .v-slot:first-child .v-formlayout-contentcell .v-label-h3, .multistep .v-verticallayout > div > .v-slot:first-child .v-formlayout-contentcell h4, .multistep .v-verticallayout > div > .v-slot:first-child .v-formlayout-contentcell .v-label-h4 {
-	margin-top: -0.5em;
-}
-
 .multistep h1.no-margin, .multistep .v-label-h1.no-margin, .multistep h2.no-margin, .multistep .v-label-h2.no-margin, .multistep h3.no-margin, .multistep .v-label-h3.no-margin, .multistep h4.no-margin, .multistep .v-label-h4.no-margin {
 	margin: 0 !important;
 }
@@ -11550,7 +11017,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .multistep .v-label-success:before, .multistep .v-label-failure:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 	content: "\f00c";
 	margin-right: 0.5em;
 	margin-left: -19px;
@@ -11857,7 +11324,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .multistep .v-richtextarea .gwt-RichTextToolbar-top div:before {
-	font-family: ThemeIcons;
+	font-family: FontAwesome;
 }
 
 .multistep .v-richtextarea .gwt-RichTextToolbar-top div[title="Toggle Bold"]:before {
@@ -12043,17 +11510,7 @@ div.v-layout.v-horizontal.v-widget {
 	padding: 19px 22px;
 }
 
-.multistep .v-Notification .v-Notification-caption {
-	color: #197de1;
-	font-size: 19px;
-	line-height: 1;
-}
-
-.multistep .v-Notification .v-Notification-description {
-	line-height: 1.4;
-}
-
-.multistep .v-Notification-caption {
+.multistep .v-Notification h1 {
 	margin: 0;
 	display: inline-block;
 	text-align: left;
@@ -12063,7 +11520,7 @@ div.v-layout.v-horizontal.v-widget {
 	letter-spacing: 0;
 }
 
-.multistep .v-Notification-description, .multistep .v-Notification-details {
+.multistep .v-Notification p {
 	margin: 0;
 	display: inline-block;
 	vertical-align: middle;
@@ -12073,12 +11530,22 @@ div.v-layout.v-horizontal.v-widget {
 	overflow: auto;
 }
 
-.multistep .v-Notification-caption ~ .v-Notification-description, .multistep .v-Notification-caption ~ .v-Notification-details {
+.multistep .v-Notification h1 ~ p {
 	margin-left: 24px;
 }
 
-.multistep .v-icon + .v-Notification-caption {
+.multistep .v-Notification .v-icon + h1 {
 	margin-left: 16px;
+}
+
+.multistep .v-Notification h1 {
+	color: #197de1;
+	font-size: 19px;
+	line-height: 1;
+}
+
+.multistep .v-Notification p {
+	line-height: 1.4;
 }
 
 .multistep .v-Notification-system {
@@ -12096,7 +11563,7 @@ div.v-layout.v-horizontal.v-widget {
 	line-height: 22px;
 }
 
-.multistep .v-Notification-system .v-Notification-description, .multistep .v-Notification-system .v-Notification-details {
+.multistep .v-Notification-system p {
 	max-width: 50em;
 }
 
@@ -12132,12 +11599,12 @@ div.v-layout.v-horizontal.v-widget {
 	animation: valo-animate-out-slide-down 200ms;
 }
 
-.multistep .v-Notification-system .v-Notification-caption {
+.multistep .v-Notification-system h1 {
 	color: #fff;
 	vertical-align: middle;
 }
 
-.multistep .v-Notification-system .v-Notification-description, .multistep .v-Notification-system .v-Notification-details {
+.multistep .v-Notification-system p {
 	color: #e6e6e6;
 }
 
@@ -12149,7 +11616,7 @@ div.v-layout.v-horizontal.v-widget {
 	text-align: left;
 }
 
-.multistep .v-Notification.tray .v-Notification-caption + .v-Notification-description {
+.multistep .v-Notification.tray h1 + p {
 	display: block;
 	margin: 0.5em 0 0;
 }
@@ -12158,11 +11625,11 @@ div.v-layout.v-horizontal.v-widget {
 	background: #FFF3D2;
 }
 
-.multistep .v-Notification.warning .v-Notification-caption {
+.multistep .v-Notification.warning h1 {
 	color: #AC7C00;
 }
 
-.multistep .v-Notification.warning .v-Notification-description {
+.multistep .v-Notification.warning p {
 	color: #9D874D;
 }
 
@@ -12173,11 +11640,11 @@ div.v-layout.v-horizontal.v-widget {
 	box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.25);
 }
 
-.multistep .v-Notification.error .v-Notification-caption {
+.multistep .v-Notification.error h1 {
 	color: white;
 }
 
-.multistep .v-Notification.error .v-Notification-description {
+.multistep .v-Notification.error p {
 	color: #f4e0df;
 }
 
@@ -12188,12 +11655,12 @@ div.v-layout.v-horizontal.v-widget {
 	line-height: 22px;
 }
 
-.multistep .v-Notification.dark .v-Notification-caption {
+.multistep .v-Notification.dark h1 {
 	color: #fff;
 	vertical-align: middle;
 }
 
-.multistep .v-Notification.dark .v-Notification-description, .multistep .v-Notification.dark .v-Notification-details {
+.multistep .v-Notification.dark p {
 	color: #e6e6e6;
 }
 
@@ -12208,7 +11675,7 @@ div.v-layout.v-horizontal.v-widget {
 	padding: 12px 15px;
 }
 
-.multistep .v-Notification.bar .v-Notification-description, .multistep .v-Notification.bar .v-Notification-details {
+.multistep .v-Notification.bar p {
 	max-width: 50em;
 }
 
@@ -12248,11 +11715,11 @@ div.v-layout.v-horizontal.v-widget {
 	padding: 11px 13px;
 }
 
-.multistep .v-Notification.small .v-Notification-caption {
+.multistep .v-Notification.small h1 {
 	font-size: 16px;
 }
 
-.multistep .v-Notification.small .v-Notification-description {
+.multistep .v-Notification.small p {
 	font-size: 14px;
 }
 
@@ -12322,13 +11789,13 @@ div.v-layout.v-horizontal.v-widget {
 	border: 2px solid #2c9720;
 }
 
-.multistep .v-Notification.success .v-Notification-caption, .multistep .v-Notification.failure .v-Notification-caption {
+.multistep .v-Notification.success h1, .multistep .v-Notification.failure h1 {
 	color: #2c9720;
 	font-weight: 400;
 }
 
-.multistep .v-Notification.success .v-Notification-caption:before, .multistep .v-Notification.failure .v-Notification-caption:before {
-	font-family: ThemeIcons;
+.multistep .v-Notification.success h1:before, .multistep .v-Notification.failure h1:before {
+	font-family: FontAwesome;
 	content: "\f00c";
 	margin-right: 0.5em;
 }
@@ -12341,11 +11808,11 @@ div.v-layout.v-horizontal.v-widget {
 	border-color: #ed473b;
 }
 
-.multistep .v-Notification.failure .v-Notification-caption {
+.multistep .v-Notification.failure h1 {
 	color: #ed473b;
 }
 
-.multistep .v-Notification.failure .v-Notification-caption:before {
+.multistep .v-Notification.failure h1:before {
 	content: "\f05e";
 }
 
@@ -12735,32 +12202,32 @@ div.v-layout.v-horizontal.v-widget {
 	outline: none;
 }
 
-.multistep .valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part {
+.multistep .v-ui.valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part {
 	background-color: #4b4b4b;
 	min-width: 74px;
 	max-width: 111px;
 }
 
-.multistep .valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .valo-menu-title {
+.multistep .v-ui.valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .valo-menu-title {
 	font-size: 12px;
 }
 
-.multistep .valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .valo-menu-title .v-label-undef-w {
+.multistep .v-ui.valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .valo-menu-title .v-label-undef-w {
 	white-space: normal;
 }
 
-.multistep .valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .v-menubar-user-menu {
+.multistep .v-ui.valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .v-menubar-user-menu {
 	margin-left: 0;
 	margin-right: 0;
 	font-size: 11px;
 }
 
-.multistep .valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .v-menubar-user-menu img.v-icon {
+.multistep .v-ui.valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .v-menubar-user-menu img.v-icon {
 	width: 28px;
 	height: 28px;
 }
 
-.multistep .valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part [class*="subtitle"] {
+.multistep .v-ui.valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part [class*="subtitle"] {
 	margin: 9px 0 0;
 	padding: 7px 25px 7px 9px;
 	line-height: 1;
@@ -12772,15 +12239,15 @@ div.v-layout.v-horizontal.v-widget {
 	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
 }
 
-.multistep .valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part [class*="subtitle"] [class*="badge"] {
+.multistep .v-ui.valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part [class*="subtitle"] [class*="badge"] {
 	right: 9px;
 }
 
-.multistep .valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part [class*="subtitle"]  + .valo-menu-item {
+.multistep .v-ui.valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part [class*="subtitle"]  + .valo-menu-item {
 	border-top: none;
 }
 
-.multistep .valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .valo-menu-item {
+.multistep .v-ui.valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .valo-menu-item {
 	display: block;
 	font-size: 26px;
 	line-height: 1;
@@ -12789,11 +12256,11 @@ div.v-layout.v-horizontal.v-widget {
 	border-top: 1px solid #555555;
 }
 
-.multistep .valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .valo-menu-item:first-child {
+.multistep .v-ui.valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .valo-menu-item:first-child {
 	border-top: none;
 }
 
-.multistep .valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .valo-menu-item [class*="caption"] {
+.multistep .v-ui.valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .valo-menu-item [class*="caption"] {
 	display: block;
 	width: auto;
 	margin: 0.3em 0 0;
@@ -12802,27 +12269,27 @@ div.v-layout.v-horizontal.v-widget {
 	line-height: 1.3;
 }
 
-.multistep .valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .valo-menu-item .v-icon {
+.multistep .v-ui.valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .valo-menu-item .v-icon {
 	margin: 0;
 }
 
-.multistep .valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .valo-menu-item span.v-icon {
+.multistep .v-ui.valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .valo-menu-item span.v-icon {
 	opacity: 0.8;
 }
 
-.multistep .valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .valo-menu-item.selected {
+.multistep .v-ui.valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .valo-menu-item.selected {
 	background: #434343;
 }
 
-.multistep .valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .valo-menu-item.selected .v-icon {
+.multistep .v-ui.valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .valo-menu-item.selected .v-icon {
 	opacity: 1;
 }
 
-.multistep .valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .valo-menu-item.selected [class*="badge"] {
+.multistep .v-ui.valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .valo-menu-item.selected [class*="badge"] {
 	border-color: #434343;
 }
 
-.multistep .valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .valo-menu-item [class*="badge"] {
+.multistep .v-ui.valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .valo-menu-item [class*="badge"] {
 	padding-left: 4px;
 	padding-right: 4px;
 	top: 7px;
@@ -12830,33 +12297,33 @@ div.v-layout.v-horizontal.v-widget {
 	border: 2px solid #4b4b4b;
 }
 
-.multistep .valo-menu-responsive[width-range~="0-800px"] {
+.multistep .v-ui.valo-menu-responsive[width-range~="0-800px"] {
 	padding-top: 37px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
-.multistep .valo-menu-responsive[width-range~="0-800px"] .v-loading-indicator {
+.multistep .v-ui.valo-menu-responsive[width-range~="0-800px"] .v-loading-indicator {
 	top: 37px;
 }
 
-.multistep .valo-menu-responsive[width-range~="0-800px"]  > .v-widget {
+.multistep .v-ui.valo-menu-responsive[width-range~="0-800px"]  > .v-widget {
 	position: relative !important;
 }
 
-.multistep .valo-menu-responsive[width-range~="0-800px"] .valo-menu {
+.multistep .v-ui.valo-menu-responsive[width-range~="0-800px"] .valo-menu {
 	border-right: none;
 }
 
-.multistep .valo-menu-responsive[width-range~="0-800px"] .valo-menu-part {
+.multistep .v-ui.valo-menu-responsive[width-range~="0-800px"] .valo-menu-part {
 	overflow: visible;
 }
 
-.multistep .valo-menu-responsive[width-range~="0-800px"] .valo-menu-toggle {
+.multistep .v-ui.valo-menu-responsive[width-range~="0-800px"] .valo-menu-toggle {
 	display: inline-block;
 }
 
-.multistep .valo-menu-responsive[width-range~="0-800px"] .valo-menu-title {
+.multistep .v-ui.valo-menu-responsive[width-range~="0-800px"] .valo-menu-title {
 	position: fixed;
 	z-index: 100;
 	top: 0;
@@ -12868,7 +12335,7 @@ div.v-layout.v-horizontal.v-widget {
 	-webkit-backface-visibility: hidden;
 }
 
-.multistep .valo-menu-responsive[width-range~="0-800px"] .valo-menu .v-menubar-user-menu {
+.multistep .v-ui.valo-menu-responsive[width-range~="0-800px"] .valo-menu .v-menubar-user-menu {
 	position: fixed;
 	z-index: 100;
 	top: 0;
@@ -12881,12 +12348,12 @@ div.v-layout.v-horizontal.v-widget {
 	-webkit-backface-visibility: hidden;
 }
 
-.multistep .valo-menu-responsive[width-range~="0-800px"] .valo-menu .v-menubar-user-menu .v-menubar-menuitem {
+.multistep .v-ui.valo-menu-responsive[width-range~="0-800px"] .valo-menu .v-menubar-user-menu .v-menubar-menuitem {
 	line-height: 36px;
 	white-space: nowrap;
 }
 
-.multistep .valo-menu-responsive[width-range~="0-800px"] .valo-menu .v-menubar-user-menu img.v-icon {
+.multistep .v-ui.valo-menu-responsive[width-range~="0-800px"] .valo-menu .v-menubar-user-menu img.v-icon {
 	display: inline-block;
 	margin: 0 6px 0 0;
 	width: 19px;
@@ -12895,7 +12362,7 @@ div.v-layout.v-horizontal.v-widget {
 	border: none;
 }
 
-.multistep .valo-menu-responsive[width-range~="0-800px"] .valo-menuitems {
+.multistep .v-ui.valo-menu-responsive[width-range~="0-800px"] .valo-menuitems {
 	height: 100%;
 	background-color: #4b4b4b;
 	background-image: -webkit-linear-gradient(right, #414141 0%, #4b4b4b 9px);
@@ -12906,7 +12373,7 @@ div.v-layout.v-horizontal.v-widget {
 	border-right: 1px solid #3b3b3b;
 	white-space: nowrap;
 	position: fixed;
-	z-index: 9000;
+	z-index: 200;
 	top: 37px;
 	bottom: 0;
 	height: auto;
@@ -12923,7 +12390,7 @@ div.v-layout.v-horizontal.v-widget {
 	transition: all 300ms;
 }
 
-.multistep .valo-menu-responsive[width-range~="0-800px"] .valo-menu-visible .valo-menuitems {
+.multistep .v-ui.valo-menu-responsive[width-range~="0-800px"] .valo-menu-visible .valo-menuitems {
 	-webkit-transform: translatex(0%);
 	-moz-transform: translatex(0%);
 	-ms-transform: translatex(0%);
@@ -12931,11 +12398,11 @@ div.v-layout.v-horizontal.v-widget {
 	transform: translatex(0%);
 }
 
-.multistep .valo-menu-responsive[width-range~="0-500px"] .valo-menu-toggle .v-button-caption {
+.multistep .v-ui.valo-menu-responsive[width-range~="0-500px"] .valo-menu-toggle .v-button-caption {
 	display: none;
 }
 
-.multistep .valo-menu-responsive[width-range~="0-500px"] .valo-menu .v-menubar-user-menu .v-menubar-menuitem-caption {
+.multistep .v-ui.valo-menu-responsive[width-range~="0-500px"] .valo-menu .v-menubar-user-menu .v-menubar-menuitem-caption {
 	display: inline-block;
 	width: 19px;
 	overflow: hidden;
@@ -12949,7 +12416,7 @@ div.v-layout.v-horizontal.v-widget {
 
 .multistep li {
 	padding-left: 0.5em;
-	line-height: 2.4em;
+	line-height: 0em;
 }
 
 .multistep .flexer, .multistep .progress-indicator {
@@ -13007,11 +12474,11 @@ div.v-layout.v-horizontal.v-widget {
 
 .multistep .progress-indicator > li .bubble {
 	border-radius: 1000px;
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
 	background-color: #bbb;
 	display: block;
-	margin: 0 auto 0.5em;
+	margin-bottom: 0.5em;
 	border-bottom: 1px solid #888;
 }
 
@@ -13020,7 +12487,7 @@ div.v-layout.v-horizontal.v-widget {
 	position: absolute;
 	top: 9px;
 	width: 100%;
-	height: 3px;
+	height: 10px;
 	content: "";
 	background-color: #bbb;
 }
@@ -13124,4 +12591,20 @@ div.v-layout.v-horizontal.v-widget {
 	width: auto !important;
 	display: block;
 	margin-left: 40px !important;
+}
+
+.multistep .completed:before {
+	content: "\f00c";
+	font-family: FontAwesome;
+	position: absolute;
+	z-index: 100;
+	color: white;
+	top: 15px;
+	font-size: 18px;
+	left: 7px;
+	text-align: left;
+}
+
+.multistep .multistep-margin-top {
+	line-height: 10px;
 }
