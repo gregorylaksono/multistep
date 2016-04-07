@@ -55,7 +55,6 @@ cz_tactica_commercial_ui_commponent_MultiStep = function() {
 		}
 	}
 	e.appendChild(ulEl);
-	$('[data-toggle="tooltip"]').tooltip();
 }
 
  
@@ -67,10 +66,16 @@ function go_step(step){
 		var current_step = null;
 		if(ilEl != null){
 			current_step = ilEl.getAttribute("step");
-			ilEl.classList.remove("completed");						
+			ilEl.classList.remove("completed");
+			ilEl.classList.remove("active");
 		}
-		if(current_step <= step){
+		if(current_step < step){
+			ilEl.classList.remove("active");
 			ilEl.classList.add("completed");
+		}
+		else if(current_step == step){
+			ilEl.classList.add("active");
+			$(".active").attr("data-content",step);
 		}
 	}
 }

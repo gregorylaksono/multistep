@@ -12454,7 +12454,7 @@ div.v-layout.v-horizontal.v-widget {
 
 .multistep .progress-indicator > li {
 	list-style: none;
-	text-align: center;
+	text-align: left;
 	width: auto;
 	padding: 0;
 	margin: 0;
@@ -12462,6 +12462,7 @@ div.v-layout.v-horizontal.v-widget {
 	text-overflow: ellipsis;
 	color: #bbb;
 	display: block;
+	z-index: 1;
 }
 
 .multistep .progress-indicator > li:hover {
@@ -12474,8 +12475,8 @@ div.v-layout.v-horizontal.v-widget {
 
 .multistep .progress-indicator > li .bubble {
 	border-radius: 1000px;
-	width: 30px;
-	height: 30px;
+	width: 40px;
+	height: 40px;
 	background-color: #bbb;
 	display: block;
 	margin-bottom: 0.5em;
@@ -12485,11 +12486,12 @@ div.v-layout.v-horizontal.v-widget {
 .multistep .progress-indicator > li .bubble:after, .multistep .progress-indicator > li .bubble:before {
 	display: block;
 	position: absolute;
-	top: 9px;
+	top: 14px;
 	width: 100%;
 	height: 10px;
 	content: "";
 	background-color: #bbb;
+	z-index: -1;
 }
 
 .multistep .progress-indicator > li.completed .bubble, .multistep .progress-indicator > li.completed .bubble:after, .multistep .progress-indicator > li.completed .bubble:before {
@@ -12503,15 +12505,6 @@ div.v-layout.v-horizontal.v-widget {
 
 .multistep .progress-indicator > li .bubble:after {
 	right: 0;
-}
-
-.multistep .progress-indicator > li.active, .multistep .progress-indicator > li.active .bubble {
-	color: #337AB7;
-}
-
-.multistep .progress-indicator > li.active .bubble, .multistep .progress-indicator > li.active .bubble:after, .multistep .progress-indicator > li.active .bubble:before {
-	background-color: #337AB7;
-	border-color: #122a3f;
 }
 
 .multistep .progress-indicator > li a:hover .bubble, .multistep .progress-indicator > li a:hover .bubble:after, .multistep .progress-indicator > li a:hover .bubble:before {
@@ -12530,6 +12523,10 @@ div.v-layout.v-horizontal.v-widget {
 
 .multistep .progress-indicator > li.danger .bubble {
 	color: #d3140f;
+}
+
+.multistep li.active .bubble {
+	background-color: #eb8b2e !important;
 }
 
 .multistep .progress-indicator > li.warning .bubble, .multistep .progress-indicator > li.warning .bubble:after, .multistep .progress-indicator > li.warning .bubble:before {
@@ -12599,12 +12596,70 @@ div.v-layout.v-horizontal.v-widget {
 	position: absolute;
 	z-index: 100;
 	color: white;
-	top: 15px;
-	font-size: 18px;
-	left: 7px;
+	top: 20px;
+	font-size: 23px;
+	left: 9px;
 	text-align: left;
 }
 
 .multistep .multistep-margin-top {
 	line-height: 10px;
+}
+
+.multistep .bubble span {
+	padding: 10px;
+	top: 50px;
+	min-width: 75px;
+	max-width: 150px;
+	height: 60px !important;
+	background-color: #f2f1f0;
+	color: black;
+	height: auto;
+	border-radius: 3px;
+	opacity: 0;
+	position: absolute;
+	visibility: hidden;
+	word-wrap: break-word;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	border: 2px solid #b8b7b6;
+	z-index: 999999;
+}
+
+.multistep .bubble span:after, .multistep .bubble span:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.multistep .bubble span:after {
+	border-bottom-color: #f2f1f0;
+	margin-left: -19px;
+	border-width: 13px;
+}
+
+.multistep .bubble span:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: #b8b7b6;
+	border-width: 16px;
+	margin-left: -22px;
+}
+
+.multistep .active:before {
+	position: absolute;
+	z-index: 100;
+	color: white;
+	top: 20px;
+	font-size: 23px;
+	left: 13px;
+	text-align: left;
+	content: attr(data-content);
 }
