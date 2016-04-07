@@ -12,7 +12,7 @@ import com.vaadin.shared.ui.JavaScriptComponentState;
 import com.vaadin.ui.AbstractJavaScriptComponent;
 
 @JavaScript({"jquery-1.7.1.min.js","MultiStep.js"})
-
+@StyleSheet("multistep.css")
 public class MultiStep extends AbstractJavaScriptComponent {
 
 	/**
