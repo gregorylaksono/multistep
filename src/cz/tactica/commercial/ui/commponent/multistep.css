@@ -14,7 +14,7 @@ ul {
 	display:-moz-box;
 	display:-ms-flexbox;
 	display:-webkit-flex;
-	display:flex;
+	display:inline-flex;
 }
 
 .no-flexer,
@@ -34,7 +34,7 @@ ul {
 	-ms-flex:1;
 	-webkit-flex:1;
 	-moz-flex:1;
-	flex:1;
+	flex: 3;
 }
 
 .progress-indicator{
@@ -42,6 +42,7 @@ ul {
 	padding:0;
 	font-size:80%;
 	text-transform:uppercase;
+	width:100%;
 }
 
 .progress-indicator>li{
@@ -52,8 +53,8 @@ ul {
 	margin:0;
 	position:relative;
 	text-overflow:ellipsis;
-	color:#bbb;
-	display:block;
+	color: #2F2F2F;
+	display:inline-table;
 	z-index:1;
 }
 
@@ -63,13 +64,13 @@ ul {
 
 .progress-indicator>li.completed,
 .progress-indicator>li.completed .bubble{
-	color:#65d074;
+	color: #28b314;
 }
 
 .progress-indicator>li .bubble{
 	border-radius:1000px;
-	width: 23px;
-	height: 23px;
+	width: 19px;
+	height: 19px;
 	background-color:#bbb;
 	display:block;
 	margin-bottom:.5em;
@@ -80,9 +81,9 @@ ul {
 .progress-indicator>li .bubble:before{
 	display:block;
 	position:absolute;
-	top: 10px;
+	top: 9px;
 	width: 99%;
-	height: 6px;
+	height: 3px;
 	content:'';
 	background-color:#bbb;
 	z-index:-1;
@@ -127,7 +128,7 @@ ul {
 	color:#d3140f;
 }
 li.active .bubble{
-	background-color:rgb(235,139,46) !important;
+	background-color: #e18925 !important;
 }
 
 .progress-indicator>li.warning .bubble,
@@ -207,15 +208,17 @@ screen and (max-width:400px){
 }
 
 .multistep-margin-top{
-	line-height: 0px;
+	line-height: 6px;
+	/* padding-right: 9px; */
 }
 
 .bubble span {
     position: relative;
-    left: -32px;
+    left: -33px;
     visibility:hidden;
 }
 
+.progress-indicator li:hover span,
 .bubble:hover span {
     opacity: 1; 
     visibility: visible;
@@ -270,9 +273,9 @@ screen and (max-width:400px){
 	position: absolute;
 	z-index: 100;
 	color: white;
-	top: 12px;
-	font-size: 14px;
-	left: 8px;
+	top: 10px;
+	font-size: 13px;
+	left: 6px;
 	text-align: center;
 	content: attr(data-content);
 }
@@ -282,13 +285,13 @@ screen and (max-width:400px){
 	position: absolute;
 	z-index: 100;
 	color: white;
-	top: 12px;
-	font-size: 14px;
-	left: 5px;
+	top: 10px;
+	font-size: 13px;
+	left: 4px;
 	text-align: left;
 }	
 
 .progress-indicator>li:last-child .bubble:before,
 .progress-indicator>li:last-child .bubble:after{
-	display:none !important;
+	width:0px;
 }

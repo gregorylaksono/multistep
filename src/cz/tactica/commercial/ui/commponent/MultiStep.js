@@ -20,6 +20,13 @@ cz_tactica_commercial_ui_commponent_MultiStep = function() {
 			var isComplete = step.isComplete;
 			var description = step.description;
 			
+			var totalChild = step_childs.length;
+			var childWidth = (100 / (totalChild - 1) ) - 3 ;
+			
+			if(key < totalChild){
+				ilEl.style.width = childWidth+"%";				
+			}
+			
 			ilEl.setAttribute("step", step.stepNum);
 			
 			var span = document.createElement('span');
